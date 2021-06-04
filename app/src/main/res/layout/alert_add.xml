@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scro"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ff8882">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2pt"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="الأرملة"
+                android:textColor="#CA1111"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/Edit_add_PARM"
+                    android:layout_width="60pt"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:digits="0,1,2,3,4,5,6,7,8,9,q,w,e,r,t,z,u,i,o,p,a,s,d,f,g,h,j,k,l,y,x,c,v,b,n,m,Q,W,E,R,T,Z,U,I,O,P,A,S,D,F,G,H,J,K,L,Y,X,C,V,B,N,M,ء,ا,ط,ئ,أ, ب, ت,ة, ث, ج, ح, خ, د, ذ, ر, ز, س, ش, ص, ض, ط, ظ, ع, غ, ف, ق, ك, ل, م, ن, هـ,ؤ,ى, و, ي"
+                    android:gravity="center"
+                    android:hint="اللقب"
+                    android:inputType="textFilter"
+                    android:maxLength="21" />
+
+                <EditText
+                    android:id="@+id/Edit_add_NARM"
+                    android:layout_width="60pt"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:digits="0,1,2,3,4,5,6,7,8,9,q,w,e,r,t,z,u,i,o,p,a,s,d,f,g,h,j,k,l,y,x,c,v,b,n,m,Q,W,E,R,T,Z,U,I,O,P,A,S,D,F,G,H,J,K,L,Y,X,C,V,B,N,M,ء,ا,ط,ئ,أ, ب, ت,ة, ث, ج, ح, خ, د, ذ, ر, ز, س, ش, ص, ض, ط, ظ, ع, غ, ف, ق, ك, ل, م, ن, هـ,ؤ,ى, و, ي"
+                    android:gravity="center"
+                    android:hint="الإسم"
+                    android:inputType="textPersonName"
+                    android:maxLength="15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/Edit_add_PDNARM"
+                    android:layout_width="60pt"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="مكان الميلاد"
+                    android:inputType="text"
+                    android:maxLength="30" />
+
+                <EditText
+                    android:id="@+id/Edit_add_DNARM"
+                    android:layout_width="60pt"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="تاريخ الميلاد"
+                    android:inputType="date"
+                    android:maxLength="10" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="40dp"
+                android:layout_height="27dp"
+                android:layout_gravity="center"
+                android:text="الزوج"
+                android:textColor="#CA1111"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/Edit_add_PZWJ"
+                    android:layout_width="60pt"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:digits="0,1,2,3,4,5,6,7,8,9,q,w,e,r,t,z,u,i,o,p,a,s,d,f,g,h,j,k,l,y,x,c,v,b,n,m,Q,W,E,R,T,Z,U,I,O,P,A,S,D,F,G,H,J,K,L,Y,X,C,V,B,N,M,ء,ا,ط,ئ,أ, ب, ت,ة, ث, ج, ح, خ, د, ذ, ر, ز, س, ش, ص, ض, ط, ظ, ع, غ, ف, ق, ك, ل, م, ن, هـ,ؤ,ى, و, ي"
+                    android:gravity="center"
+                    android:hint="اللقب"
+                    android:inputType="textPersonName"
+                    android:maxLength="21" />
+
+                <EditText
+                    android:id="@+id/Edit_add_NZWJ"
+                    android:layout_width="60pt"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:digits="0,1,2,3,4,5,6,7,8,9,q,w,e,r,t,z,u,i,o,p,a,s,d,f,g,h,j,k,l,y,x,c,v,b,n,m,Q,W,E,R,T,Z,U,I,O,P,A,S,D,F,G,H,J,K,L,Y,X,C,V,B,N,M,ء,ا,ط,ئ,أ, ب, ت,ة, ث, ج, ح, خ, د, ذ, ر, ز, س, ش, ص, ض, ط, ظ, ع, غ, ف, ق, ك, ل, م, ن, هـ,ؤ,ى, و, ي"
+                    android:gravity="center"
+                    android:hint="الإسم"
+                    android:inputType="textPersonName"
+                    android:maxLength="15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/Edit_add_PDNZWJ"
+                    android:layout_width="60pt"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:digits="0,1,2,3,4,5,6,7,8,9,q,w,e,r,t,z,u,i,o,p,a,s,d,f,g,h,j,k,l,y,x,c,v,b,n,m,Q,W,E,R,T,Z,U,I,O,P,A,S,D,F,G,H,J,K,L,Y,X,C,V,B,N,M,ء,ا,ط,ئ,أ, ب, ت,ة, ث, ج, ح, خ, د, ذ, ر, ز, س, ش, ص, ض, ط, ظ, ع, غ, ف, ق, ك, ل, م, ن, هـ,ؤ,ى, و, ي,/"
+                    android:gravity="center"
+                    android:hint="مكان الميلاد"
+                    android:inputType="text"
+                    android:maxLength="21" />
+
+                <EditText
+                    android:id="@+id/Edit_add_DNZWJ"
+                    android:layout_width="60pt"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="تاريخ الميلاد"
+                    android:inputType="date"
+                    android:maxLength="10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/Edit_add_TWZWJ"
+                    android:layout_width="60pt"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="تاريخ الوفاة"
+                    android:inputType="datetime"
+                    android:maxLength="10" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="الأولاد "
+                android:textColor="#CA1111"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/Edit_add_CHF"
+                    android:layout_width="60pt"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="عدد الإناث"
+                    android:inputType="number"
+                    android:maxLength="2" />
+
+                <EditText
+                    android:id="@+id/Edit_add_CHM"
+                    android:layout_width="60pt"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="عدد الذكور"
+                    android:inputType="number"
+                    android:maxLength="2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/Edit_add_ADDRES"
+                    android:layout_width="60pt"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:digits="0,1,2,3,4,5,6,7,8,9,q,w,e,r,t,z,u,i,o,p,a,s,d,f,g,h,j,k,l,y,x,c,v,b,n,m,Q,W,E,R,T,Z,U,I,O,P,A,S,D,F,G,H,J,K,L,Y,X,C,V,B,N,M,ء,ا,ط,ئ,أ, ب, ت,ة, ث, ج, ح, خ, د, ذ, ر, ز, س, ش, ص, ض, ط, ظ, ع, غ, ف, ق, ك, ل, م, ن, هـ,ؤ,ى, و, ي"
+                    android:gravity="center"
+                    android:hint="العنوان"
+                    android:inputType="text"
+                    android:maxLength="25" />
+
+                <EditText
+                    android:id="@+id/Edit_add_NUM"
+                    android:layout_width="60pt"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="رقم الهاتف"
+                    android:inputType="phone"
+                    android:maxLength="10" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buadd_prsn_alert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="إضافة"
+                android:textColor="#000000"
+                app:backgroundTint="#ffc2b4" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
